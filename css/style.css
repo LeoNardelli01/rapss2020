@@ -40,11 +40,11 @@ h5{
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  height: 60px;
   width: 80%;
-  background-color: rgba(198, 198, 198, 0.71);
+  background-color: rgb(198, 198, 198);
   margin-bottom: 20px;
   box-shadow: 1px 1px 10px black;
+
 }
 h3{
   margin: 0px !important;

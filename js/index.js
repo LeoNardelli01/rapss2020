@@ -1,15 +1,5 @@
 $(function(){
 
-  var btn_fms = $(".fms");
-  var btn_12_patrones = $(".12-patrones");
-  var btn_8_patrones = $(".8-patrones");
-  var btn_6_patrones = $(".6-patrones");
-  var btn_4_patrones = $(".4-patrones");
-  var btn_2_patrones = $(".2-patrones");
-
-  btn_2_patrones.click(function(){
-    alert('click');
-  });
   //FUNCIONES
   function obtenerFecha(){
     var fecha = new Date();
@@ -24,6 +14,54 @@ $(function(){
     return ( dias[num_dia] + " " + dia + " de " + meses[mes] + " de " + anio);
 
   }
+
+  $(".formato").click(function(){
+
+    var formato = $(this).children('h3').html();
+
+    $(this).css('background-color', '#e53935');
+
+    swal({
+      title: "¿Comenzar " + formato + " ?",
+      text: "Deberás seleccionar los nombres a continuación",
+      icon: '../img/favicon.ico',
+      buttons: true,
+      dangerMode: false,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        swal("¿Están listos?", {
+          icon: "success",
+        });
+
+        switch (formato) {
+          case 'FMS':
+            $(location).attr('href', '../formatos/fms/fms.html');
+            break;
+          case '12 PATRONES':
+            $(location).attr('href', '../formatos/12_p/12_p.html');
+            break;
+          case '8 PATRONES':
+            $(location).attr('href', '../formatos/8_p/8.html');
+            break;
+          case '6 PATRONES':
+            $(location).attr('href', '../formatos/6_p/6_p.html');
+            break;
+          case '4 PATRONES':
+            $(location).attr('href', '../formatos/4_p/4_p.html');
+            break;
+          case '2 PATRONES':
+            $(location).attr('href', '../formatos/2_p/2_p.html');
+        }
+
+      } else {
+        swal("Elegir otro formato");
+      }
+    });
+
+
+  });
+
 
   $("#fecha").html(obtenerFecha());
 
