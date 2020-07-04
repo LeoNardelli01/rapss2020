@@ -24,7 +24,7 @@ $(function(){
     swal({
       title: "¿Comenzar " + formato + " ?",
       text: "Deberás seleccionar los nombres a continuación",
-      icon: '../img/favicon.ico',
+      icon: 'img/favicon.ico',
       buttons: true,
       dangerMode: false,
     })
@@ -36,26 +36,27 @@ $(function(){
 
         switch (formato) {
           case 'FMS':
-            $(location).attr('href', '../formatos/fms/fms.html');
+            $(location).attr('href', 'formatos/fms/fms.html');
             break;
           case '12 PATRONES':
-            $(location).attr('href', '../formatos/12_p/12_p.html');
+            $(location).attr('href', 'formatos/12_p/12_p.html');
             break;
           case '8 PATRONES':
-            $(location).attr('href', '../formatos/8_p/8.html');
+            $(location).attr('href', 'formatos/8_p/8.html');
             break;
           case '6 PATRONES':
-            $(location).attr('href', '../formatos/6_p/6_p.html');
+            $(location).attr('href', 'formatos/6_p/6_p.html');
             break;
           case '4 PATRONES':
-            $(location).attr('href', '../formatos/4_p/4_p.html');
+            $(location).attr('href', 'formatos/4_p/4_p.html');
             break;
           case '2 PATRONES':
-            $(location).attr('href', '../formatos/2_p/2_p.html');
+            $(location).attr('href', 'formatos/2_p/2_p.html');
         }
 
       } else {
-        swal("Elegir otro formato");
+        swal("Elige otro formato");
+        $(this).css("background-color", "rgb(198, 198, 198)")
       }
     });
 
