@@ -18,7 +18,7 @@ $(function(){
     if (p1 == "") {
       e.preventDefault();
       swal({
-        title: "Olvidaste un nombre!",
+        title: "El participante 1 necesita un nombre!",
         text: "recuerda que son maximo 10 caracteres",
         icon: "../../img/favicon.ico"
       });
@@ -26,7 +26,7 @@ $(function(){
     } else if (p2 == "") {
       e.preventDefault();
       swal({
-        title: "Olvidaste un nombre!",
+        title: "El participante 2 necesita un nombre!",
         text: "Recuerda que son maximo 10 caracteres",
         icon: "../../img/favicon.ico"
       });

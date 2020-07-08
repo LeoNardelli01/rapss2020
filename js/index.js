@@ -23,7 +23,7 @@ $(function(){
 
     swal({
       title: "¿Comenzar " + formato + " ?",
-      text: "Deberás seleccionar los nombres a continuación",
+      text: "Siguenos en Instagram @rapspreadsheet",
       icon: 'img/favicon.ico',
       buttons: true,
       dangerMode: false,

@@ -2,3 +2,18 @@
   background-color: white;
   padding-top: 150px;
 }
+
+.menu a {
+  font-family: 'Russo One', sans-serif;
+  font-size: 25px;
+  color: black !important;
+
+}
+.menu .tema{
+  width: 247px !important;
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+
+}
