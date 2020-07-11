@@ -7,6 +7,9 @@ $(function(){
   let resFinalesP1 = 0;
   let resFinalesP2 = 0;
 
+  $("#p1").html(player1);
+  $("#p2").html(player2);
+
         //btn easy mode verde o gris
         if (localStorage.getItem('em_totalEasyMode1') === null) {
             $("#easyMode").css('background-color', 'rgba(145, 145, 145, 0.51)');//gris
@@ -78,35 +81,31 @@ $(function(){
   switch (terminados) {
     case 0:      //ARRANCA EL MENU
       var options = {
-        strings: ["<h4>Bienvenido a RAP Spreadsheet</h4>", "<h4>Formato FMS</h4>","<h4>Versión beta 1.0</h4>", "<h4>3...2...1... TIEMPO!!</h4>", "<h4></h4>" ],
+        strings: ["Bienvenido a RAP Spreadsheet", "Formato FMS","Versión beta 1.0", "3...2...1... TIEMPO!!", "" ],
         typeSpeed: 70,
         showCursor: false,
         smartBackspace: true
       }
-      var typed = new Typed(".typed", options);
+      var typed = new Typed("#typed", options);
 
       $("#easyMode").removeClass("disabled");
-      $("#nombre1").html(player1);
-      $("#nombre2").html(player2);
 
       break;
 
       case 1:  // EASY MODE TERMINADO
 
       var options = {
-        strings: ["<h4>Easy Mode Terminado</h4>", "<h4>" + localStorage.getItem('em_totalEasyMode1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('em_totalEasyMode2') + " Pts Para " + player2 +"</h4>", "<h4>Prepárate para el Hard Mode</h4>", "<h4></h4>" ],
+        strings: ["Easy Mode Terminado", "" + localStorage.getItem('em_totalEasyMode1') + " Pts Para " + player1 +"","" + localStorage.getItem('em_totalEasyMode2') + " Pts Para " + player2 +"", "Prepárate para el Hard Mode", "" ],
         typeSpeed: 70,
         showCursor: false,
         smartBackspace: true
-      }
-      var typed = new Typed(".typed", options);
+      };
+
+      var typed = new Typed("#typed", options);
 
 
       $("#hardMode").removeClass("disabled");
-      $("#nombre1").html(player1);
-      $("#resP1").html(resFinalesP1)
-      $("#nombre2").html(player2);
-      $("#resP2").html(resFinalesP2);
+
       break;
 
       case 2:  // HARD MODE TERMINADO
@@ -116,14 +115,8 @@ $(function(){
         showCursor: false,
         smartBackspace: true
       }
-      var typed = new Typed(".typed", options);
+      var typed = new Typed("#typed", options);
       $("#tematicas").removeClass("disabled");
-
-      $("#nombre1").html(player1);
-      $("#resP1").html(resFinalesP1);
-      $("#nombre2").html(player2);
-      $("#resP2").html(resFinalesP2);
-
 
       break;
 
@@ -134,13 +127,8 @@ $(function(){
           showCursor: false,
           smartBackspace: true
         }
-        var typed = new Typed(".typed", options);
+        var typed = new Typed("#typed", options);
         $("#personajes").removeClass("disabled");
-
-        $("#nombre1").html(player1);
-        $("#resP1").html(resFinalesP1);
-        $("#nombre2").html(player2);
-        $("#resP2").html(resFinalesP2);
 
         break;
 
@@ -151,11 +139,8 @@ $(function(){
         showCursor: false,
         smartBackspace: true
       }
-      var typed = new Typed(".typed", options);
+      var typed = new Typed("#typed", options);
       $("#libre").removeClass("disabled");
-
-      $("#nombre1").html(player1);
-      $("#nombre2").html(player2);
 
       break;
 
@@ -166,11 +151,8 @@ $(function(){
         showCursor: false,
         smartBackspace: true
       }
-      var typed = new Typed(".typed", options);
+      var typed = new Typed("#typed", options);
       $("#deluxe").removeClass("disabled");
-
-      $("#nombre1").html(player1);
-      $("#nombre2").html(player2);
 
       break;
 
@@ -181,10 +163,7 @@ $(function(){
         showCursor: false,
         smartBackspace: true
       }
-      var typed = new Typed(".typed", options);
-
-      $("#nombre1").html(player1);
-      $("#nombre2").html(player2);
+      var typed = new Typed("#typed", options);
 
       //activar termianr batalla
       $("#btn-terminarBatalla").removeClass("disabled");

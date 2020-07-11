@@ -80,7 +80,7 @@ $(function(){
      .then((willDelete) => {
        if (willDelete) {
          tomarDatos();
-         swal("¡Preparate para el Hard Mode!", {
+         swal("¡Preparate para Hard Mode!", {
            icon: "success",
          });
 

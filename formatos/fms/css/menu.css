@@ -1,19 +1,41 @@
+*{
+  margin: 0px !important;
+}
 .container-fluid {
   background-color: white;
-  padding-top: 150px;
 }
-
+.col{
+  padding: 0px !important;
+}
+nav{
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  background-color: black !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .menu a {
   font-family: 'Russo One', sans-serif;
   font-size: 25px;
   color: black !important;
-
+}
+h5{
+  margin-top: 20px;
+  height: 40px;
 }
 .menu .tema{
-  width: 247px !important;
-  margin-top: 10px;
+  width: 70% !important;
+  margin-top: 15px;
   position: relative;
   left: 50%;
   transform: translate(-50%);
 
+}
+#p1{
+  color: blue;
+
+}
+#p2{
+  color: red;
 }
