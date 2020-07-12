@@ -37,3 +37,14 @@ h5{
 #p2{
   color: red;
 }
+
+.terminar{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#marca{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  color: red;
+}

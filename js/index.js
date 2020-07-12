@@ -2,8 +2,8 @@ $(function(){
 
   //FUNCIONES
   function obtenerFecha(){
-    var fecha = new Date();
 
+    var fecha = new Date();
     var dia = fecha.getDate();
     var mes =  fecha.getMonth();
     var anio = fecha.getFullYear();
@@ -23,7 +23,7 @@ $(function(){
 
     swal({
       title: "¿Comenzar " + formato + " ?",
-      text: "Siguenos en Instagram @rapspreadsheet",
+      text: "Síguenos en Instagram @rapspreadsheet",
       icon: 'img/favicon.ico',
       buttons: true,
       dangerMode: false,
@@ -38,19 +38,19 @@ $(function(){
           case 'FMS':
             $(location).attr('href', 'formatos/fms/fms.html');
             break;
-          case '12 PATRONES':
+          case '12 Compases':
             $(location).attr('href', 'formatos/12_p/12_p.html');
             break;
-          case '8 PATRONES':
+          case '8 Compases':
             $(location).attr('href', 'formatos/8_p/8.html');
             break;
-          case '6 PATRONES':
+          case '6 Compases':
             $(location).attr('href', 'formatos/6_p/6_p.html');
             break;
-          case '4 PATRONES':
+          case '4 Compases':
             $(location).attr('href', 'formatos/4_p/4_p.html');
             break;
-          case '2 PATRONES':
+          case '2 Compases':
             $(location).attr('href', 'formatos/2_p/2_p.html');
         }
 

@@ -82,7 +82,7 @@ $(function(){
     case 0:      //ARRANCA EL MENU
       var options = {
         strings: ["Bienvenido a RAP Spreadsheet", "Formato FMS","Versión beta 1.0", "3...2...1... TIEMPO!!", "" ],
-        typeSpeed: 70,
+        typeSpeed: 100,
         showCursor: false,
         smartBackspace: true
       }
@@ -96,7 +96,7 @@ $(function(){
 
       var options = {
         strings: ["Easy Mode Terminado", "" + localStorage.getItem('em_totalEasyMode1') + " Pts Para " + player1 +"","" + localStorage.getItem('em_totalEasyMode2') + " Pts Para " + player2 +"", "Prepárate para el Hard Mode", "" ],
-        typeSpeed: 70,
+        typeSpeed: 100,
         showCursor: false,
         smartBackspace: true
       };
@@ -111,7 +111,7 @@ $(function(){
       case 2:  // HARD MODE TERMINADO
       var options = {
         strings: ["<h4>Hard Mode Terminado</h4>", "<h4>" + localStorage.getItem('hm_totalHardMode1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('hm_totalHardMode2') + " Pts Para " + player2 +"</h4>", "<h4>Prepárate para Temáticas</h4>", "<h4></h4>" ],
-        typeSpeed: 70,
+        typeSpeed: 100,
         showCursor: false,
         smartBackspace: true
       }
