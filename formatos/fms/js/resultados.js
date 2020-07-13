@@ -5,6 +5,21 @@ $(function(){
  $("#p1").html(p1);
  $("#p2").html(p2);
 
+ function obtenerFecha(){
+
+   var fecha = new Date();
+   var dia = fecha.getDate();
+   var mes =  fecha.getMonth();
+   var anio = fecha.getFullYear();
+   var num_dia = fecha.getDay();
+   var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio","Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+   var dias = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+
+   return ( dias[num_dia] + " " + dia + " de " + meses[mes] + " de " + anio);
+
+ }
+ $("#fecha").html(obtenerFecha());
+ 
  // variables EasyMode
   let em_totalPatronesP1 = localStorage.getItem('em_totalPatronesP1');
   let em_tecnicasp1 = localStorage.getItem('em_tecnicasp1');
@@ -114,11 +129,11 @@ $(function(){
   $("#hm_totalP2").html(hm_totalP2);
 
   // tematicas
-  $("#te_resPatronesP1").html(hm_totalPatronesP1);
-  $("#te_resTecnicasP1").html(hm_tecnicasp1);
-  $("#te_resFlowP1").html(hm_flowp1);
-  $("#te_resEscenaP1").html(hm_escenap1);
-  $("#te_totalP1").html(hm_totalP1);
+  $("#te_resPatronesP1").html(te_totalPatronesP1);
+  $("#te_resTecnicasP1").html(te_tecnicasp1);
+  $("#te_resFlowP1").html(te_flowp1);
+  $("#te_resEscenaP1").html(te_escenap1);
+  $("#te_totalP1").html(te_totalP1);
 
   $("#te_resPatronesP2").html(te_totalPatronesP2);
   $("#te_resTecnicasP2").html(te_tecnicasp2);
@@ -127,11 +142,11 @@ $(function(){
   $("#te_totalP2").html(te_totalP2);
 
   //random Mode
-  $("#rm_resPatronesP1").html(hm_totalPatronesP1);
-  $("#rm_resTecnicasP1").html(hm_tecnicasp1);
-  $("#rm_resFlowP1").html(hm_flowp1);
-  $("#rm_resEscenaP1").html(hm_escenap1);
-  $("#rm_totalP1").html(hm_totalP1);
+  $("#rm_resPatronesP1").html(rm_totalPatronesP1);
+  $("#rm_resTecnicasP1").html(rm_tecnicasp1);
+  $("#rm_resFlowP1").html(rm_flowp1);
+  $("#rm_resEscenaP1").html(rm_escenap1);
+  $("#rm_totalP1").html(rm_totalP1);
 
   $("#rm_resPatronesP2").html(rm_totalPatronesP2);
   $("#rm_resTecnicasP2").html(rm_tecnicasp2);
@@ -140,11 +155,11 @@ $(function(){
   $("#rm_totalP2").html(rm_totalP2);
 
   //libre
-  $("#li_resPatronesP1").html(hm_totalPatronesP1);
-  $("#li_resTecnicasP1").html(hm_tecnicasp1);
-  $("#li_resFlowP1").html(hm_flowp1);
-  $("#li_resEscenaP1").html(hm_escenap1);
-  $("#li_totalP1").html(hm_totalP1);
+  $("#li_resPatronesP1").html(li_totalPatronesP1);
+  $("#li_resTecnicasP1").html(li_tecnicasp1);
+  $("#li_resFlowP1").html(li_flowp1);
+  $("#li_resEscenaP1").html(li_escenap1);
+  $("#li_totalP1").html(li_totalP1);
 
   $("#li_resPatronesP2").html(li_totalPatronesP2);
   $("#li_resTecnicasP2").html(li_tecnicasp2);
@@ -153,11 +168,11 @@ $(function(){
   $("#li_totalP2").html(li_totalP2);
 
   // deluxe
-  $("#de_resPatronesP1").html(hm_totalPatronesP1);
-  $("#de_resTecnicasP1").html(hm_tecnicasp1);
-  $("#de_resFlowP1").html(hm_flowp1);
-  $("#de_resEscenaP1").html(hm_escenap1);
-  $("#de_totalP1").html(hm_totalP1);
+  $("#de_resPatronesP1").html(de_totalPatronesP1);
+  $("#de_resTecnicasP1").html(de_tecnicasp1);
+  $("#de_resFlowP1").html(de_flowp1);
+  $("#de_resEscenaP1").html(de_escenap1);
+  $("#de_totalP1").html(de_totalP1);
 
   $("#de_resPatronesP2").html(de_totalPatronesP2);
   $("#de_resTecnicasP2").html(de_tecnicasp2);
@@ -186,9 +201,11 @@ $(function(){
      $(".final").css('background-color', 'rgb(57, 57, 57)');
    } else if (resFinalesP1 > resFinalesP2) {
      $("#resultado").html("Ganó " + p1);
+     $("#resultado").css('color', 'black');
      $(".final").css('background-color', 'blue');
    } else{
      $("#resultado").html("Ganó " + p2);
+     $("#resultado").css('color', 'black');
      $(".final").css('background-color', 'red')
    }
 
@@ -203,7 +220,7 @@ $(function(){
    var totalFlowP2 = (parseFloat(em_flowp2) + parseFloat(hm_flowp2) + parseFloat(te_flowp2) + parseFloat(rm_flowp2) + parseFloat(li_flowp2) + parseFloat(de_flowp2)) * 100 / 16;
    var totalEscenaP2 = (parseFloat(em_escenap2) + parseFloat(hm_escenap2) + parseFloat(te_escenap2) + parseFloat(rm_escenap2) + parseFloat(li_escenap2) + parseFloat(de_escenap2)) * 100 /16;
 
-   var batallometro = (parseFloat(resFinalesP1) + parseFloat(resFinalesP2)) * 100 / 488;
+   var batallometro = (parseFloat(resFinalesP1) + parseFloat(resFinalesP2)) * 100 / 484;
 
    // chart BARRAS
     var chart1 = document.getElementById('chart1').getContext('2d');

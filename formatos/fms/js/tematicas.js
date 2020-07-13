@@ -8,7 +8,7 @@ $(function(){
     showCursor: false,
     smartBackspace: true
   }
-  var typed = new Typed(".typed", options);
+  var typed = new Typed("#typed", options);
   //FIn TYPED
   let p1 = localStorage.getItem('p1');
   let p2 = localStorage.getItem('p2');

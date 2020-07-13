@@ -10,7 +10,7 @@ nav {
   background-color: rgb(57, 57, 57);
   color:white;
   padding-top: 20px;
-  height: 700px;
+
 }
 h1{
   text-shadow: 0px 0px 10px white;
@@ -66,4 +66,28 @@ h3, h4{
   box-shadow:inset 0px -2px 5px rgba(0, 0, 0, 0.5);
   animation: change 1s linear infinite;
 
+}
+/* PUBLICIDAD */
+.publicidad-res-1{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(7, 99, 115);
+}
+.publicidad-res-2 {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(238, 126, 100);
+}
+
+
+.terminar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: rgb(57, 57, 57);
+}
+.redes{
+  background-color: rgb(57, 57, 57);
 }
