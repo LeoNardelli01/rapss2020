@@ -5,9 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px !important;
+
 }
 
 h1{
+  font-family: 'Russo One', sans-serif;
+  color: black;
+}
+h4{
   font-family: 'Russo One', sans-serif;
   color: black;
 }
@@ -54,6 +60,15 @@ h5{
   color: red;
 }
 
+/*minutolibre.html*/
+.patron-libre{
+  display: flex;
+  flex-direction: row;
+  justify-content:  center;
+  align-items: center;
+
+}
+
 /* ------ Publicidades ------*/
 
 /* Easy mode*/
@@ -68,5 +83,27 @@ h5{
   width: 100%;
   height: 200px;
   background-color: rgb(255, 148, 0);
+}
+/* Tematicas*/
+.publicidad-te-1{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(255, 148, 0);
+}
+.publicidad-te-2{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(7, 99, 115);
+}
 
+/* Random Mode*/
+.publicidad-rm-1{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(7, 99, 115);
+}
+.publicidad-rm-2{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(7, 99, 115);
 }

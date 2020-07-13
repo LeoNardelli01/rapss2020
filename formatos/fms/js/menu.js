@@ -46,13 +46,13 @@ $(function(){
             terminados += 1;
           }
 
-          if (localStorage.getItem('pe_totalPersonajes1') === null) {
-            $("#personajes").css('background-color', 'rgba(145, 145, 145, 0.51') // gris
+          if (localStorage.getItem('rm_totalRandom1') === null) {
+            $("#randomMode").css('background-color', 'rgba(145, 145, 145, 0.51') // gris
           } else {
-            $("#personajes").css('background-color', "rgba(17, 213, 78, 0.39)");
-            $("#personajes").css('box-shadow', '0px 0px 15px green');
-            resFinalesP1 += parseInt(localStorage.getItem('pe_totalPersonajes1'));
-            resFinalesP2 += parseInt(localStorage.getItem('pe_totalPersonajes2'));
+            $("#randomMode").css('background-color', "rgba(17, 213, 78, 0.39)");
+            $("#randomMode").css('box-shadow', '0px 0px 15px green');
+            resFinalesP1 += parseInt(localStorage.getItem('rm_totalRandom1'));
+            resFinalesP2 += parseInt(localStorage.getItem('rm_totalRandom2'));
             terminados += 1;
           }
 
@@ -81,7 +81,7 @@ $(function(){
   switch (terminados) {
     case 0:      //ARRANCA EL MENU
       var options = {
-        strings: ["Bienvenido a RAP Spreadsheet", "Formato FMS","Versión beta 1.0", "3...2...1... TIEMPO!!", "" ],
+        strings: ["Bienvenido a RAP Spreadsheet", "Formato FMS","Versión Alpha","Nuevo formato FMS 2020", "3...2...1... TIEMPO!!", "" ],
         typeSpeed: 100,
         showCursor: false,
         smartBackspace: true
@@ -122,19 +122,19 @@ $(function(){
 
       case 3: //Tematicas terminado
         var options = {
-          strings: ["<h4>Temáticas Terminado</h4>", "<h4>" + localStorage.getItem('te_totalTematicas1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('te_totalTematicas2') + " Pts Para " + player2 +"</h4>", "<h4>Prepárate para Personajes</h4>", "<h4></h4>" ],
-          typeSpeed: 70,
+          strings: ["<h4>Temáticas Terminado</h4>", "<h4>" + localStorage.getItem('te_totalTematicas1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('te_totalTematicas2') + " Pts Para " + player2 +"</h4>", "<h4>Prepárate para Random mode</h4>"],
+          typeSpeed: 100,
           showCursor: false,
           smartBackspace: true
         }
         var typed = new Typed("#typed", options);
-        $("#personajes").removeClass("disabled");
+        $("#randomMode").removeClass("disabled");
 
         break;
 
       case 4: // personajes terminado
       var options = {
-        strings: ["<h4>Personajes Terminado</h4>", "<h4>" + localStorage.getItem('pe_totalPersonajes1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('pe_totalPersonajes2') + " Pts Para " + player2 +"</h4>", "<h4>Se viene el minuto libre...</h4>", "<h4></h4>" ],
+        strings: ["<h4>Random Mode Terminado</h4>", "<h4>" + localStorage.getItem('rm_totalRandom1') + " Pts Para " + player1 +"</h4>","<h4>" + localStorage.getItem('rm_totalRandom2') + " Pts Para " + player2 +"</h4>", "<h4>Se viene el minuto libre...</h4>"],
         typeSpeed: 70,
         showCursor: false,
         smartBackspace: true
@@ -171,5 +171,8 @@ $(function(){
 
   }//fin switch
 
+  $("#btn-terminarBatalla").click(function(){
+    $(location).attr('href', 'resultados.html');
+  });
 
 })
