@@ -4,8 +4,7 @@ $(function(){
   let player1 = localStorage.getItem('p1');
   let player2 = localStorage.getItem('p2');
   let terminados = 0;
-  let resFinalesP1 = 0;
-  let resFinalesP2 = 0;
+
 
   $("#p1").html(player1);
   $("#p2").html(player2);
@@ -17,8 +16,6 @@ $(function(){
           }else{
             $("#easyMode").css('background-color', "rgba(17, 213, 78, 0.39)");//verde
             $("#easyMode").css('box-shadow', '0px 0px 15px green');
-            resFinalesP1 += parseInt(localStorage.getItem('em_totalEasyMode1'));
-            resFinalesP2 += parseInt(localStorage.getItem('em_totalEasyMode2'));
 
             terminados += 1;
           }
@@ -30,9 +27,6 @@ $(function(){
           }else{
             $("#hardMode").css('background-color', "rgba(17, 213, 78, 0.39)");//verde
             $("#hardMode").css('box-shadow', '0px 0px 15px green');
-            resFinalesP1 += parseInt(localStorage.getItem('hm_totalHardMode1'));
-            resFinalesP2 += parseInt(localStorage.getItem('hm_totalHardMode2'));
-
             terminados += 1;
           }
 
@@ -41,8 +35,6 @@ $(function(){
           } else{
             $("#tematicas").css('background-color', "rgba(17, 213, 78, 0.39)");
             $("#tematicas").css('box-shadow', '0px 0px 15px green');
-            resFinalesP1 += parseInt(localStorage.getItem('te_totalTematicas1'));
-            resFinalesP2 += parseInt(localStorage.getItem('te_totalTematicas2'));
             terminados += 1;
           }
 
@@ -51,8 +43,6 @@ $(function(){
           } else {
             $("#randomMode").css('background-color', "rgba(17, 213, 78, 0.39)");
             $("#randomMode").css('box-shadow', '0px 0px 15px green');
-            resFinalesP1 += parseInt(localStorage.getItem('rm_totalRandom1'));
-            resFinalesP2 += parseInt(localStorage.getItem('rm_totalRandom2'));
             terminados += 1;
           }
 
@@ -61,8 +51,6 @@ $(function(){
           } else{
             $("#libre").css('background-color', "rgba(17, 213, 78, 0.39)");
             $("#libre").css('box-shadow', '0px 0px 15px green');
-            resFinalesP1 += parseInt(localStorage.getItem('li_totalLibre1'));
-            resFinalesP2 += parseInt(localStorage.getItem('li_totalLibre2'));
             terminados += 1;
           }
           if (localStorage.getItem('de_totalDeluxe1') === null ) {
@@ -70,8 +58,6 @@ $(function(){
           } else{
             $("#deluxe").css('background-color', "rgba(17, 213, 78, 0.39)");
             $("#deluxe").css('box-shadow', '0px 0px 15px green');
-            resFinalesP1 += parseInt(localStorage.getItem('de_totalDeluxe1'));
-            resFinalesP2 += parseInt(localStorage.getItem('de_totalDeluxe2'));
             terminados += 1;
           }
 
