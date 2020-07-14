@@ -1,4 +1,15 @@
 $(function(){
+  localStorage.clear();
+
+  var options = {
+    strings: ["Web-app para votar Batallas de Freestyle", "¿Te animas a convertirte en juez?", "Siguenos en Instagram @rapspreadsheet"],
+    typeSpeed: 120,
+    showCursor: false,
+    smartBackspace: true
+  }
+  var typed = new Typed("#typed", options);
+  //FIn TYPED
+
 
   //FUNCIONES
   function obtenerFecha(){
@@ -42,7 +53,7 @@ $(function(){
             $(location).attr('href', 'formatos/12_p/12_p.html');
             break;
           case '8 Compases':
-            $(location).attr('href', 'formatos/8_p/8.html');
+            $(location).attr('href', 'formatos/8_p/8_p.html');
             break;
           case '6 Compases':
             $(location).attr('href', 'formatos/6_p/6_p.html');

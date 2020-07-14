@@ -5,6 +5,9 @@ $(function(){
  $("#p1").html(p1);
  $("#p2").html(p2);
 
+ $("#p1-final").html(p1);
+ $("#p2-final").html(p2);
+
  function obtenerFecha(){
 
    var fecha = new Date();
@@ -19,7 +22,7 @@ $(function(){
 
  }
  $("#fecha").html(obtenerFecha());
- 
+
  // variables EasyMode
   let em_totalPatronesP1 = localStorage.getItem('em_totalPatronesP1');
   let em_tecnicasp1 = localStorage.getItem('em_tecnicasp1');
@@ -384,7 +387,7 @@ $(function(){
            $(location).attr('href', '../../../index.html');
          } else {
            e.preventDefault();
-           swal("Sigue mirando los resultados");
+           swal("Recuerda seguirnos en Instagram @rapspreadsheet");
 
          }
        });

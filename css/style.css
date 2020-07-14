@@ -7,6 +7,7 @@ body {
 nav {
   background-color: rgb(57, 57, 57) !important;
   padding: 0px !important;
+  width: 100%;
 }
 h1{
   font-family: 'Permanent Marker', cursive;
@@ -57,8 +58,14 @@ p{
   font-family: 'Play', sans-serif;
 }
 
-.testimonios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Publicidad Index */
+.publicidad-index-header{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(128, 214, 105);
+}
+.publicidad-index-footer{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(65, 13, 168);
 }
