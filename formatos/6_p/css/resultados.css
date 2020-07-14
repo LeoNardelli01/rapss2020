@@ -88,11 +88,11 @@ h6{
 }
 
 /* Espacios publicitarios */
-
-
 .publicidad-6-res{
   width: 100%;
   height: 200px;
-  background-color: rgb(111, 29, 144);
-  margin-bottom: 30px;
+  background-image: url("../../../publicidad/publicidad-6-res.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

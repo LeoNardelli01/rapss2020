@@ -59,3 +59,12 @@ h5{
   font-size: 20px;
   color: red;
 }
+/* Publicidad 8p votacion */
+.publicidad-8-vot{
+  width: 100%;
+  height: 200px;
+  background-image: url("../../../publicidad/publicidad-8-vot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

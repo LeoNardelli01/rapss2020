@@ -86,13 +86,12 @@ h6{
 #btn-nuevaBatalla {
   margin-top: 30px;
 }
-
-/* Espacios publicitarios */
-
-
+/* Publicidad 4 inicio*/
 .publicidad-4-res{
   width: 100%;
   height: 200px;
-  background-color: rgb(111, 29, 144);
-  margin-bottom: 30px;
+  background-image: url("../../../publicidad/publicidad-4-res.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

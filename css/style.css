@@ -63,10 +63,18 @@ p{
 .publicidad-index-header{
   width: 100%;
   height: 200px;
-  background-color: rgb(128, 214, 105);
+  background-image: url("../publicidad/publicidad-index-header.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 50px;
 }
 .publicidad-index-footer{
   width: 100%;
   height: 200px;
-  background-color: rgb(65, 13, 168);
+  background-image: url("../publicidad/publicidad-index-footer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 50px;
 }

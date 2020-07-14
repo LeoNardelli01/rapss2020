@@ -23,7 +23,7 @@ h5{
 }
 
 .formulario {
-  height: 400px;
+  height: 150px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -41,5 +41,16 @@ p{
 }
 
 .comenzar{
+  margin-top: 30px;
   margin-bottom: 30px;
+}
+
+/* publicidad 8p inicio*/
+.publicidad-8-inicio{
+  width: 100%;
+  height: 200px;
+  background-image: url("../../../publicidad/publicidad-8-inicio.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }

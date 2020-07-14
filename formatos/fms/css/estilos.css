@@ -52,5 +52,9 @@ p{
 .publicidad-fms{
   width: 100%;
   height: 200px;
-  background-color: rgb(74, 61, 224);
+  background-image: url("../../../publicidad/publicidad-fms.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 50px;
 }
