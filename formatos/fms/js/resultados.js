@@ -1,4 +1,10 @@
 $(function(){
+  // genera un numero aleatorio entre 0 y el multiplicador de Math.random(), en este caso de 0 a 99
+  var num = (Math.floor(Math.random() * 99) + 1);
+
+  $("#contador-ig").html(num);
+  
+
  let p1 = localStorage.getItem('p1');
  let p2 = localStorage.getItem('p2');
 
@@ -237,14 +243,14 @@ $(function(){
             {
             label: p1,
             data: [totalPatronesP1.toFixed(2), totalTecnicasP1.toFixed(2), totalFlowP1.toFixed(2), totalEscenaP1.toFixed(2)],
-            backgroundColor: 'rgba(0, 98, 255, 0.7)',
-            borderColor: 'rgb(0, 98, 255)',
+            backgroundColor: 'rgb(0, 0, 220)',
+            borderColor: 'rgb(0, 0, 210)',
             borderWidth: 1
           },{
             label: p2,
             data: [totalPatronesP2.toFixed(2), totalTecnicasP2.toFixed(2), totalFlowP2.toFixed(2), totalEscenaP2.toFixed(2) ],
-            backgroundColor: 'rgba(255, 0, 0, 0.7)',
-            borderColor: 'rgb(255, 0, 0)',
+            backgroundColor: 'rgb(220, 0, 0)',
+            borderColor: 'rgb(210, 0, 0)',
             borderWidth: 1
           }
         ]},
@@ -293,7 +299,7 @@ $(function(){
     var chart2_line = new Chart(chart2,{
         type:"line",
         data: {
-          labels:['Easy', 'Hard', 'Temat.', 'Random', 'Libre', 'Deluxe'],
+          labels:['EM', 'HM', 'TE', 'RM', 'LI', 'DE'],
           datasets: [
             {
             label: p1,
@@ -303,7 +309,7 @@ $(function(){
           },{
             label: p2,
             data: [(parseFloat(em_totalP2) * 100 / 30).toFixed(2), (parseFloat(hm_totalP2) * 100 / 30).toFixed(2), (parseFloat(te_totalP2) * 100 / 44).toFixed(2), (parseFloat(rm_totalP2) * 100 / 38).toFixed(2), (parseFloat(li_totalP2) * 100 / 66).toFixed(2), (parseFloat(de_totalP2) * 100 /50).toFixed(2) ],
-            borderColor: 'rgb(255, 0, 0)',
+            borderColor: 'rgb(210, 0, 0)',
             borderWidth: 2
           }
         ]},

@@ -1,6 +1,12 @@
 $(function(){
   localStorage.clear();
 
+  // genera un numero aleatorio entre 0 y el multiplicador de Math.random(), en este caso de 0 a 99
+  var num = (Math.floor(Math.random() * 99) + 1);
+
+  $("#contador-ig").html(num);
+
+
   var options = {
     strings: ["Web-app para votar Batallas de Freestyle", "¿Te animas a convertirte en juez?", "Siguenos en Instagram @rapspreadsheet"],
     typeSpeed: 120,

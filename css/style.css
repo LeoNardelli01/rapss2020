@@ -15,6 +15,10 @@ h1{
   font-size: 40px;
   width: 100%;
 }
+h2{
+    font-family: 'Russo One', sans-serif;
+  color: red;
+}
 h5{
   color: white;
   width: 100%;
