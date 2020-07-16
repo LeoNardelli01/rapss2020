@@ -3,7 +3,7 @@ $(function(){
 
   //TYPED JS
   var options = {
-    strings: ["Nuevo formato 2020","4 compases cada uno, 8x8", "5 sobres, 5 opciones:", "Imagenes, Objetos, Personajes..", "Terminaciones y conceptos y Actualidad", "Comienza...", "&larr; &larr; &larr;"],
+    strings: ["Nuevo formato 2020"," 8x8 con votaciones intermedias", "5 sobres, 5 opciones:", "Imagenes, Objetos, Personajes..", "Terminaciones y conceptos y Actualidad", "Comienza...", "&larr; &larr; &larr;"],
     typeSpeed: 120,
     showCursor: false,
     smartBackspace: true
@@ -24,6 +24,10 @@ $(function(){
     var p1_patron2 = parseFloat($("#patron2p1").val());
     var p1_patron3 = parseFloat($("#patron3p1").val());
     var p1_patron4 = parseFloat($("#patron4p1").val());
+    var p1_patron5 = parseFloat($("#patron5p1").val());
+    var p1_patron6 = parseFloat($("#patron6p1").val());
+    var p1_patron7 = parseFloat($("#patron7p1").val());
+    var p1_patron8 = parseFloat($("#patron8p1").val());
 
     var p1_tecnica = parseFloat($("#tecnicasp1").val());
     var p1_flow = parseFloat($("#flowp1").val());
@@ -35,14 +39,19 @@ $(function(){
     var p2_patron2 = parseFloat($("#patron2p2").val());
     var p2_patron3 = parseFloat($("#patron3p2").val());
     var p2_patron4 = parseFloat($("#patron4p2").val());
+    var p2_patron5 = parseFloat($("#patron5p2").val());
+    var p2_patron6 = parseFloat($("#patron6p2").val());
+    var p2_patron7 = parseFloat($("#patron7p2").val());
+    var p2_patron8 = parseFloat($("#patron8p2").val());
+
 
     var p2_tecnica = parseFloat($("#tecnicasp2").val());
     var p2_flow = parseFloat($("#flowp2").val());
     var p2_escena = parseFloat($("#escenap2").val());
     var p2_totalPatrones;
 
-    p1_totalPatrones = p1_patron1 + p1_patron2 + p1_patron3 + p1_patron4;
-    p2_totalPatrones = p2_patron1 + p2_patron2 + p2_patron3 + p2_patron4;
+    p1_totalPatrones = p1_patron1 + p1_patron2 + p1_patron3 + p1_patron4 + p1_patron5 + p1_patron6 + p1_patron7 + p1_patron8;
+    p2_totalPatrones = p2_patron1 + p2_patron2 + p2_patron3 + p2_patron4 + p2_patron5 + p2_patron6 + p2_patron7 + p2_patron8;
 
     var totalRandom1 = p1_totalPatrones + p1_tecnica + p1_flow + p1_escena;
     var totalRandom2 = p2_totalPatrones + p2_tecnica + p2_flow + p2_escena;

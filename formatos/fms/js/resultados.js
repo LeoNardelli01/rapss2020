@@ -213,17 +213,18 @@ $(function(){
    }
 
    //Chart.js
-   var totalPatronesP1 = (parseFloat(em_totalPatronesP1) + parseFloat(hm_totalPatronesP1) + parseFloat(te_totalPatronesP1) + parseFloat(rm_totalPatronesP1) + parseFloat(li_totalPatronesP1) + parseFloat(de_totalPatronesP1)) * 100 / 188;
+   var totalPatronesP1 = (parseFloat(em_totalPatronesP1) + parseFloat(hm_totalPatronesP1) + parseFloat(te_totalPatronesP1) + parseFloat(rm_totalPatronesP1) + parseFloat(li_totalPatronesP1) + parseFloat(de_totalPatronesP1)) * 100 / 210;
    var totalTecnicasP1 = (parseFloat(em_tecnicasp1) + parseFloat(hm_tecnicasp1) + parseFloat(te_tecnicasp1) + parseFloat(rm_tecnicasp1) + parseFloat(li_tecnicasp1) + parseFloat(de_tecnicasp1)) * 100 / 16;
    var totalFlowP1 = (parseFloat(em_flowp1) + parseFloat(hm_flowp1) + parseFloat(te_flowp1) + parseFloat(rm_flowp1) + parseFloat(li_flowp1) + parseFloat(de_flowp1)) * 100 / 16;
    var totalEscenaP1 = (parseFloat(em_escenap1) + parseFloat(hm_escenap1) + parseFloat(te_escenap1) + parseFloat(rm_escenap1) + parseFloat(li_escenap1) + parseFloat(de_escenap1)) * 100 /16;
 
-   var totalPatronesP2 = (parseFloat(em_totalPatronesP2) + parseFloat(hm_totalPatronesP2) + parseFloat(te_totalPatronesP2) + parseFloat(rm_totalPatronesP2) + parseFloat(li_totalPatronesP2) + parseFloat(de_totalPatronesP2)) * 100 / 188;
+   var totalPatronesP2 = (parseFloat(em_totalPatronesP2) + parseFloat(hm_totalPatronesP2) + parseFloat(te_totalPatronesP2) + parseFloat(rm_totalPatronesP2) + parseFloat(li_totalPatronesP2) + parseFloat(de_totalPatronesP2)) * 100 / 210;
    var totalTecnicasP2 = (parseFloat(em_tecnicasp2) + parseFloat(hm_tecnicasp2) + parseFloat(te_tecnicasp2) + parseFloat(rm_tecnicasp2) + parseFloat(li_tecnicasp2) + parseFloat(de_tecnicasp2)) * 100 / 16;
    var totalFlowP2 = (parseFloat(em_flowp2) + parseFloat(hm_flowp2) + parseFloat(te_flowp2) + parseFloat(rm_flowp2) + parseFloat(li_flowp2) + parseFloat(de_flowp2)) * 100 / 16;
    var totalEscenaP2 = (parseFloat(em_escenap2) + parseFloat(hm_escenap2) + parseFloat(te_escenap2) + parseFloat(rm_escenap2) + parseFloat(li_escenap2) + parseFloat(de_escenap2)) * 100 /16;
 
-   var batallometro = (parseFloat(resFinalesP1) + parseFloat(resFinalesP2)) * 100 / 484;
+   var batallometro = (parseFloat(resFinalesP1) + parseFloat(resFinalesP2)) * 100 / 516;
+
 
    // chart BARRAS
     var chart1 = document.getElementById('chart1').getContext('2d');
@@ -296,12 +297,12 @@ $(function(){
           datasets: [
             {
             label: p1,
-            data: [(parseFloat(em_totalP1) * 100 / 30).toFixed(2), (parseFloat(hm_totalP1) * 100 /30).toFixed(2), (parseFloat(te_totalP1) * 100 / 44).toFixed(2), (parseFloat(rm_totalP1) * 100 / 22).toFixed(2), (parseFloat(li_totalP1) * 100 / 66).toFixed(2), (parseFloat(de_totalP1) * 100 / 50).toFixed(2) ],
+            data: [(parseFloat(em_totalP1) * 100 / 30).toFixed(2), (parseFloat(hm_totalP1) * 100 /30).toFixed(2), (parseFloat(te_totalP1) * 100 / 44).toFixed(2), (parseFloat(rm_totalP1) * 100 / 38).toFixed(2), (parseFloat(li_totalP1) * 100 / 66).toFixed(2), (parseFloat(de_totalP1) * 100 / 50).toFixed(2) ],
             borderColor: 'rgb(0, 98, 255)',
             borderWidth: 2
           },{
             label: p2,
-            data: [(parseFloat(em_totalP2) * 100 / 30).toFixed(2), (parseFloat(hm_totalP2) * 100 / 30).toFixed(2), (parseFloat(te_totalP2) * 100 / 44).toFixed(2), (parseFloat(rm_totalP2) * 100 / 22).toFixed(2), (parseFloat(li_totalP2) * 100 / 66).toFixed(2), (parseFloat(de_totalP2) * 100 /50).toFixed(2) ],
+            data: [(parseFloat(em_totalP2) * 100 / 30).toFixed(2), (parseFloat(hm_totalP2) * 100 / 30).toFixed(2), (parseFloat(te_totalP2) * 100 / 44).toFixed(2), (parseFloat(rm_totalP2) * 100 / 38).toFixed(2), (parseFloat(li_totalP2) * 100 / 66).toFixed(2), (parseFloat(de_totalP2) * 100 /50).toFixed(2) ],
             borderColor: 'rgb(255, 0, 0)',
             borderWidth: 2
           }
