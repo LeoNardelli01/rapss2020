@@ -6,17 +6,6 @@ $(function(){
 
   $("#contador-ig").html(num);
 
-
-  var options = {
-    strings: ["Web-app para votar Batallas de Freestyle", "¿Te animas a convertirte en juez?", "Siguenos en Instagram @rapspreadsheet"],
-    typeSpeed: 120,
-    showCursor: false,
-    smartBackspace: true
-  }
-  var typed = new Typed("#typed", options);
-  //FIn TYPED
-
-
   //FUNCIONES
   function obtenerFecha(){
 
@@ -31,6 +20,18 @@ $(function(){
     return ( dias[num_dia] + " " + dia + " de " + meses[mes] + " de " + anio);
 
   }
+
+  var options = {
+    strings: ["Web-app para votar Batallas de Freestyle", "¿Te animás a convertirte en juez?", "INFO: Sábado 18/7 Arranca FMS Perú"],
+    typeSpeed: 120,
+    showCursor: false,
+    smartBackspace: true
+  }
+  var typed = new Typed("#typed", options);
+  //FIn TYPED
+
+
+
 
   $(".formato").click(function(){
 
